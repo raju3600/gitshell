@@ -13,6 +13,11 @@ read token
 # Ask for repository name
 echo "Enter repository name"
 read repoName
+
+echo " Find how many branches in the repo "
+a= git branches -v
+echo $a
+
 # Check if repository exists at GitHub
 curl -k "https://api.github.com/repos/${username}/${repoName}.git"
 # If repository exits then
