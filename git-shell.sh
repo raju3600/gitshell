@@ -27,7 +27,7 @@ echo $a
 
 	git status
 
-	git remote set-url origin https://${token}@github.com/${username}/{repoName}.git
+	git remote set-url origin https://${token}@github.com/${username}/${repoName}.git
 
 	 # If there are any uncommited and unstatged files, ask user to commit them
     if [ "$(git status --porcelain)" ]; then
