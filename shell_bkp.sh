@@ -36,11 +36,6 @@ git commit -m " this is commit for $(parse_git_branch) "
 
 echo $(parse_git_branch)
 
-
-
-git merge feature1
-
-
 git push origin $(parse_git_branch)
 
 
